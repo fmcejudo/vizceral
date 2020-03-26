@@ -3,17 +3,17 @@
 ### Table of Contents
 
 -   [Copyright_Notice][1]
--   [objectHovered][2]
+-   [objectHighlighted][2]
     -   [Properties][3]
--   [objectHighlighted][4]
+-   [viewChanged][4]
     -   [Properties][5]
--   [viewChanged][6]
+-   [nodeContextSizeChanged][6]
     -   [Properties][7]
--   [nodeContextSizeChanged][8]
+-   [matchesFound][8]
     -   [Properties][9]
--   [matchesFound][10]
-    -   [Properties][11]
--   [viewUpdated][12]
+-   [viewUpdated][10]
+-   [objectHovered][11]
+    -   [Properties][12]
 -   [constructor][13]
     -   [Parameters][14]
 -   [getStyles][15]
@@ -55,16 +55,6 @@ Copyright 2016 Netflix, Inc.
     See the License for the specific language governing permissions and
     limitations under the License.
 
-## objectHovered
-
-The `objectHovered` event is fired whenever on mouseover on a 'node' or 'connection' .
-`object.type` will be either 'node' or 'connection'. In case another 'node' or 'connection'
- is already in focus (because of click/highlight event), then this event won't be triggered.
-
-### Properties
-
--   `object` **[object][37]** The object that has been hovered,
-
 ## objectHighlighted
 
 The `objectHighlighted` event is fired whenever an object is highlighted.
@@ -101,6 +91,16 @@ The `matchesFound` event is fired whenever nodes are found via findNodes().
 ## viewUpdated
 
 The `viewUpdated` event is fired whenever the current displayed graph's view updates.
+
+## objectHovered
+
+The `objectHovered` event is fired whenever on mouseover on a 'node' or 'connection' .
+`object.type` will be either 'node' or 'connection'. In case another 'node' or 'connection'
+ is already in focus (because of click/highlight event), then this event won't be triggered.
+
+### Properties
+
+-   `object` **[object][37]** The object that has been hovered,
 
 ## constructor
 
@@ -220,27 +220,27 @@ Set the set of filters to apply along with their current values.
 
 [1]: #copyright_notice
 
-[2]: #objecthovered
+[2]: #objecthighlighted
 
 [3]: #properties
 
-[4]: #objecthighlighted
+[4]: #viewchanged
 
 [5]: #properties-1
 
-[6]: #viewchanged
+[6]: #nodecontextsizechanged
 
 [7]: #properties-2
 
-[8]: #nodecontextsizechanged
+[8]: #matchesfound
 
 [9]: #properties-3
 
-[10]: #matchesfound
+[10]: #viewupdated
 
-[11]: #properties-4
+[11]: #objecthovered
 
-[12]: #viewupdated
+[12]: #properties-4
 
 [13]: #constructor
 

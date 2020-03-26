@@ -26,7 +26,7 @@ class GlobalNode extends Node {
   }
 
   isInteractive () {
-    return this.nodes && this.nodes.length > 0;
+    return this.nodes && this.name !== 'INTERNET';
   }
 
   isDraggable () {

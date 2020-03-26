@@ -83,6 +83,7 @@ class FocusedNodeView extends NodeView {
     this.metricSpacing = this.canvasHeight * 0.1;
     this.headerFontSize = (this.canvasHeight - this.metricSpacing) * 0.2;
     this.metricFontSize = (this.canvasHeight - this.metricSpacing) * 0.3;
+
     this.addText();
 
     if (!this.object.loaded) {

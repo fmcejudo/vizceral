@@ -42,7 +42,7 @@ class GlobalDefinitions {
             }
           },
           entry: {
-            top: { header: 'TOTAL RPS', data: 'data.volume', format: '0,0' }
+            top: { header: 'TOTAL RPSs', data: 'data.volume', format: '0,0' }
           }
         }
       }
